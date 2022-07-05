@@ -1,4 +1,5 @@
-﻿using isolate_designPattern_test.Vehicles;
+﻿using isolate_designPattern_test.Models;
+using isolate_designPattern_test.Vehicles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,9 @@ namespace isolate_designPattern_test
     {
         static void Main(string[] args)
         {
-
             Car getC = new Car();
 
-            getC.GetCar();
+            getC.StartRoute();
 
         }
     }

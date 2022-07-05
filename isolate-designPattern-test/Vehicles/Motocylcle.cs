@@ -9,7 +9,7 @@ namespace isolate_designPattern_test.Vehicles
 {
     internal class Motocylcle : IVehicle
     {
-        public void GetCar()
+        public void GetCargo()
         {
           
         }

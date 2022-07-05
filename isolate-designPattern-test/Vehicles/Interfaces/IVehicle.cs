@@ -8,7 +8,7 @@ namespace isolate_designPattern_test.Vehicles.Interfaces
 {
     public interface IVehicle
     {
-        void GetCar();
+        void GetCargo();
         void StartRoute();
     }
 }
