@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace isolate_designPattern_test.Factories.Interfaces
 {
-     class MotocycleTransport : ITransport
+     class MotocycleTransport : Transport
     {
         protected override IVehicle CreateTransport()
         {

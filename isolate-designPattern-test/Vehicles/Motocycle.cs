@@ -11,12 +11,13 @@ namespace isolate_designPattern_test.Vehicles
     {
         public void GetCargo()
         {
-          
+            Console.WriteLine("Pegamos a ecomenda");
         }
 
         public void StartRoute()
         {
-            throw new NotImplementedException();
+            GetCargo();
+            Console.WriteLine("Iniciando a entrega de moto");
         }
     }
 }

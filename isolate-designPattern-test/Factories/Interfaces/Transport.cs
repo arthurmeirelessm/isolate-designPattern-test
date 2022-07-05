@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace isolate_designPattern_test.Factories.Interfaces
 {
-    abstract class ITransport
+    abstract class Transport
     {
         public void StartTransport()
         {

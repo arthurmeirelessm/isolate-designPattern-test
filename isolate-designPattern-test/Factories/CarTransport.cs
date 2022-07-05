@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace isolate_designPattern_test.Factories
 {
-     class CarTransport : ITransport
+     class CarTransport : Transport
     {
         protected override IVehicle CreateTransport()
         {

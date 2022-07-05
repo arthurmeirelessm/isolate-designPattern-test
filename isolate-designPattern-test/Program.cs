@@ -1,4 +1,6 @@
-﻿using isolate_designPattern_test.Models;
+﻿using isolate_designPattern_test.Factories;
+using isolate_designPattern_test.Factories.Interfaces;
+using isolate_designPattern_test.Models;
 using isolate_designPattern_test.Vehicles;
 using System;
 using System.Collections.Generic;
@@ -12,9 +14,21 @@ namespace isolate_designPattern_test
     {
         static void Main(string[] args)
         {
-            Car getC = new Car();
 
-            getC.StartRoute();
+            Transport transport;
+
+            if (args.Length > 0 && args[0] == "--car")
+            {
+                transport = new CarTransport();
+            }
+            else if (args.Length > 0 && args[0] == "--motocycle")
+            {
+                transport = new MotocycleTransport();
+            }
+            else
+            {
+                Console.WriteLine("Selecione o tipo de serviço: ");
+            }
 
         }
     }

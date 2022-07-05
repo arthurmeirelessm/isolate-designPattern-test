@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factories\Interfaces\ITransport.cs" />
+    <Compile Include="Factories\Interfaces\Transport.cs" />
     <Compile Include="Factories\CarTransport.cs" />
     <Compile Include="Factories\MotocycleTransport.cs" />
     <Compile Include="Models\CarModel.cs" />

@@ -18,9 +18,8 @@ namespace isolate_designPattern_test.Vehicles
 
         public void StartRoute()
         {
-
             GetCargo();
-            Console.WriteLine("Iniciando a entrega");
+            Console.WriteLine("Iniciando a entrega de carro");
         }
     }
 }
