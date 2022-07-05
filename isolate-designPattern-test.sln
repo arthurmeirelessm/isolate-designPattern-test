@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isolate-designPattern-test", "isolate-designPattern-test\isolate-designPattern-test.csproj", "{B67F153E-B564-4AB0-B336-C01550BA8033}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chain-of-responsabily", "Chain-of-responsabily\Chain-of-responsabily.csproj", "{AA983A09-1B2F-4544-B63B-880F4F4D3F4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B67F153E-B564-4AB0-B336-C01550BA8033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67F153E-B564-4AB0-B336-C01550BA8033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67F153E-B564-4AB0-B336-C01550BA8033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA983A09-1B2F-4544-B63B-880F4F4D3F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA983A09-1B2F-4544-B63B-880F4F4D3F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA983A09-1B2F-4544-B63B-880F4F4D3F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA983A09-1B2F-4544-B63B-880F4F4D3F4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
