@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace isolate_designPattern_test.Vehicles
 {
-    internal class Motocylcle : IVehicle
+    internal class Motocycle : IVehicle
     {
         public void GetCargo()
         {

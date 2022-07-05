@@ -1,4 +1,5 @@
 ﻿using isolate_designPattern_test.Factories.Interfaces;
+using isolate_designPattern_test.Vehicles;
 using isolate_designPattern_test.Vehicles.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,14 +9,11 @@ using System.Threading.Tasks;
 
 namespace isolate_designPattern_test.Factories
 {
-    abstract class CarTransport
+     class CarTransport : ITransport
     {
-        public void StartTransport()
+        protected override IVehicle CreateTransport()
         {
-            IVehicle vehicle = CreateTransport();
-            vehicle.StartRoute();
+            return new Car();
         }
-
-        protected abstract IVehicle CreateTransport();
     }
 }
