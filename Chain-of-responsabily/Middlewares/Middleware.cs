@@ -4,6 +4,7 @@ namespace Chain_of_responsabily.Middlewares
 {
     abstract class Middleware
     {
+        //Usando injeçãop de dependencia na propria classe para usar o check lá em baixo no CheckNext
         private Middleware _next;
 
         public Middleware LinkWith(Middleware next)
