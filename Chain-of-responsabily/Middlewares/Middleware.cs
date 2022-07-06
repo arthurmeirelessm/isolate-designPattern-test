@@ -16,7 +16,6 @@ namespace Chain_of_responsabily.Middlewares
 
         public abstract Boolean Check(string email, string password);
 
-
         //CheckNext: Chequa se Check retorna true ou false
         //Se retornar TRUE: Quer dizer que virá um outro middleware a ser validado
         //Se retornar FALSE; Quer dizer que a validação do middleware deu algum tipo de erro

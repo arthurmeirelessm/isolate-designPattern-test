@@ -47,8 +47,9 @@ namespace Chain_of_responsabily.Servers
 
         public Boolean IsValidPassword(string email, string password)
         {
-            string value = "";
+            string value;
 
+            //TryGetValue: procure esse parametro(email). Se achou, devolve na variavel value
             users.TryGetValue(email, out value);
 
             return password == value;
