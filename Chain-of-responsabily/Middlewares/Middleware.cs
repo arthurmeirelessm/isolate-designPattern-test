@@ -5,13 +5,13 @@ namespace Chain_of_responsabily.Middlewares
     abstract class Middleware
     {
         //Usando injeçãop de dependencia na propria classe para usar o check lá em baixo no CheckNext
-        private Middleware _next;
+        private Middleware next;
 
         public Middleware LinkWith(Middleware next)
         {
-            this._next = next;
+            this.next = next;
 
-            return _next;
+            return next;
         }
 
 
@@ -22,12 +22,12 @@ namespace Chain_of_responsabily.Middlewares
         //Se retornar FALSE; Quer dizer que a validação do middleware deu algum tipo de erro
         protected Boolean CheckNext(string email, string password)
         {
-            if (_next == null)
+            if (next == null)
             {
                 return true;
             }
 
-            return _next.Check(email, password);
+            return next.Check(email, password);
         }
     }
 }
