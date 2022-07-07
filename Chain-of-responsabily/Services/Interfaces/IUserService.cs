@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Chain_of_responsabily.Models;
+using System;
 
 
 namespace Chain_of_responsabily.Services.Interfaces

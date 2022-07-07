@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Middlewares\CheckPermissionMiddleware.cs" />
     <Compile Include="Middlewares\IMiddleware.cs" />
     <Compile Include="Middlewares\CheckUserMiddleware.cs" />
     <Compile Include="Models\UserModel.cs" />

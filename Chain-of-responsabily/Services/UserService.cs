@@ -12,6 +12,10 @@ namespace Chain_of_responsabily.Services
         private UserModel _user;
         private IMiddleware middleware;
 
+        public UserService()
+        {
+        }
+
         public UserService(UserModel user)
         {
             _user = user;
@@ -24,12 +28,7 @@ namespace Chain_of_responsabily.Services
 
         public bool Login(string email, string password)
         {
-            if (middleware.Check(email, password))
-            {
-                Console.WriteLine("Bem-vindo!");
-                return true;
-            }
-            return false;
+            return (middleware.Check(email, password)) ? true: false;
         }
         public void RegisterUser(string email, string password)
         {
@@ -40,15 +39,13 @@ namespace Chain_of_responsabily.Services
 
         public bool HasEmail(string email)
         {
-            var hasEmail = _user.email == email;
-
+            var hasEmail = _user.email.Equals(email);
             return hasEmail;
         }
 
         public bool HasPassword(string password)
         {
             var hasPassword = _user.password == password;
-
             return hasPassword;
         }
     }
