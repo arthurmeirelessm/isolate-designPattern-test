@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Middlewares\IMiddleware.cs" />
-    <Compile Include="Middlewares\UserMiddleware.cs" />
+    <Compile Include="Middlewares\CheckUserMiddleware.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

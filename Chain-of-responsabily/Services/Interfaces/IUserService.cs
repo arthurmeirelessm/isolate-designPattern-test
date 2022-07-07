@@ -1,9 +1,5 @@
-﻿using Chain_of_responsabily.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+
 
 namespace Chain_of_responsabily.Services.Interfaces
 {
@@ -35,7 +31,7 @@ namespace Chain_of_responsabily.Services.Interfaces
         /// <param name="orderNum"></param>
         /// <returns></returns>
 
-        Boolean HasEmail(string email, string password);
+        Boolean HasEmail(string email);
 
         /// <summary>
         /// Calculates the rate of an advance order
@@ -44,6 +40,6 @@ namespace Chain_of_responsabily.Services.Interfaces
         /// <param name="order"></param>
         /// <param name="orderNum"></param>
         /// <returns></returns>
-        Boolean HasPassword(string email, string password);
+        Boolean HasPassword(string password);
     }
 }

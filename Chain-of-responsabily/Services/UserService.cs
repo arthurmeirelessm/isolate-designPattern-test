@@ -2,10 +2,7 @@
 using Chain_of_responsabily.Models;
 using Chain_of_responsabily.Services.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Chain_of_responsabily.Services
 {
@@ -41,28 +38,18 @@ namespace Chain_of_responsabily.Services
             userModel.password = password;
         }
 
-        public bool HasEmail(string email, string password)
+        public bool HasEmail(string email)
         {
             var hasEmail = _user.email == email;
 
-            if (hasEmail)
-            {
-                return true;
-            }
-
-            return false;
+            return hasEmail;
         }
 
-        public bool HasPassword(string email, string password)
+        public bool HasPassword(string password)
         {
             var hasPassword = _user.password == password;
 
-            if (hasPassword)
-            {
-                return true;
-            }
-
-            return false;
+            return hasPassword;
         }
     }
 }
